@@ -1,0 +1,15 @@
+.left-btn {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  background-color: white;
+  z-index: 1;
+}
+
+.right-btn {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  background-color: white;
+  z-index: 1;
+}

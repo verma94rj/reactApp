@@ -1,6 +1,32 @@
-.App {
-  text-align: center;
+.main {
+  display: flex;
+  /* justify-content: center;  */
+  flex-direction: column;
+  border: 2px solid black;
+  height: 96vh;
+  margin: 5px;
 }
+
+.navbar {
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  /* height: 50%; */
+  border: 2px solid red;
+}
+
+.home {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* border: 2px solid blueviolet; */
+}
+/* .App {
+  text-align: center;
+} */
 
 .App-logo {
   height: 40vmin;
@@ -26,6 +52,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.carousel {
+  background-color: rgb(251, 117, 97);
+}
+
+.Navbar {
+  background-color: #61dafb;
 }
 
 @keyframes App-logo-spin {
