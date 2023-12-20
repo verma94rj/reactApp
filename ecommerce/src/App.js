@@ -1,16 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import Navigation from './Customer/Components/Navigation';
-import DemoCarousel from './Customer/Components/DemoCarousel';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MyApp from "./MyApp";
+import Myfiestpage from "./pages/Myfiestpage";
 
+//import Routers from "./Routing/Routers";
 function App() {
   return (
-    <div>
-     <Navigation/>
-     <div className="Mycol">
-     <DemoCarousel/>
-    </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<MyApp />} />
+        <Route exact path="/ambika" element={<Myfiestpage />} />
+      </Routes>
+    </Router>
   );
 }
 

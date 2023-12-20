@@ -1,0 +1,10 @@
+.MyApp {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+.img {
+    height: 250px;
+    object-fit: contain;
+}

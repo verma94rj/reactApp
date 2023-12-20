@@ -1,5 +1,13 @@
-.App {
-  text-align: center;
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .App-logo {
@@ -32,6 +40,12 @@
   background-color: red;
 }
 
+.carousel-image {
+  width: 100%; /* Example styles */
+  height: 300px; /* Example styles */
+  object-fit: cover; /* Example styles */
+  /* Add any other necessary styles */
+}
 
 @keyframes App-logo-spin {
   from {
