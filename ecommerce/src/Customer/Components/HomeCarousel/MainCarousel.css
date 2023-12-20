@@ -1,10 +1,10 @@
 .MyApp {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
-.img {
-    height: 250px;
-    object-fit: contain;
+.image {
+  height: 350px;
+  object-fit: contain;
 }

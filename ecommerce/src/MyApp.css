@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
