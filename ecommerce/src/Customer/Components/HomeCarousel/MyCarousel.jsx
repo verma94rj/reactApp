@@ -1,28 +1,38 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import { Link } from "react-router-dom";
 import { MyCarouselData } from "./MyCarouselData";
 import "./MyCarousel.css";
-const MyCarousel = () => {
+
+const Carousel = () => {
   const responsive = {
     0: { items: 1 },
     720: { items: 3 },
     1024: { items: 6 },
   };
-
-  const items = MyCarouselData.map((item, index) => (
-    <div className="card" key={index}>
-      <img
-        src="https://rukminim1.flixcart.com/image/612/612/k4d27ww0/shirt/q/w/t/l-el024-el-senor-original-imafnadnjp5pq6tg.jpeg?q=70"
-        alt="Card"
-        className="full-image"
-      />
-
-      <div className="card-overlay">
-        <div className="solid-background">
-          <h2 className="card-title">Flat 20% Off</h2>
-          <p className="card-description">Ethnic Wear</p>
-        </div>
+  const items = MyCarouselData.map((item) => (
+    <div key={item.id}>
+      <Link
+        to={
+          item.href !== undefined && item.href !== "" ? item.href : "/default"
+        }
+      >
+        <img
+          className="cursor-pointer object-cover object-top  w-[300px] h-[250px]"
+          src={item.image}
+          alt=""
+        ></img>
+      </Link>
+      <div className="cursor-pointer p-4">
+        <Link
+          to={
+            item.href !== undefined && item.href !== "" ? item.href : "/default"
+          }
+        >
+          <h3 className="text-large font-medium text-gray-900">{item.brand}</h3>
+          <p className="mt-2 text-sm text-gray-500">{item.title}</p>
+        </Link>
       </div>
     </div>
   ));
@@ -30,11 +40,10 @@ const MyCarousel = () => {
     <AliceCarousel
       mouseTracking
       items={items}
-      infinite
-      disableButtonsControls
       responsive={responsive}
+      controlsStrategy="responsive"
     />
   );
 };
 
-export default MyCarousel;
+export default Carousel;

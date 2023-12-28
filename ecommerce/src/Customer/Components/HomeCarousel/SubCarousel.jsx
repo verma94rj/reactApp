@@ -9,7 +9,7 @@ const SubCarousel = () => {
     720: { items: 3 },
     1024: { items: 6 },
   };
-  const items = [1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
+  const items = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
     (item) => (
       <div>
         <SubCarouselcard></SubCarouselcard>
