@@ -3,6 +3,7 @@ import "./App.css";
 import Navigation from "./Customer/Components/Navigation/Navigation";
 import HomePage from "./pages/HomePage";
 import "./MyApp.css";
+import Mycard from "./Customer/Components/HomeCarousel/Mycard";
 
 function MyApp() {
   return (
@@ -12,6 +13,9 @@ function MyApp() {
       </div>
       <div>
         <HomePage />
+        <div>
+          <Mycard />
+        </div>
       </div>
     </div>
   );
